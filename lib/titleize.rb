@@ -6,7 +6,7 @@
 #
 # If loaded in a Rails environment, it modifies Inflector.titleize.
 module Titleize
-  SMALL_WORDS = %w{a an and as at but by en for if in of on or the to v v. via vs vs.}
+  SMALL_WORDS = %w{ a as à às ao aos da das de do dos e em entre na nas no nos o os ou para por sobre um uns uma umas}
 
   extend self
 
@@ -108,7 +108,7 @@ if defined? ActiveSupport
     # This replaces the default Rails titleize. Like the default, it uses
     # Inflector.underscore and Inflector.humanize to convert
     # underscored_names and CamelCaseNames to a more human form. However, you can change
-    # this behavior by passing :humanize => false or :underscore => false as options. 
+    # this behavior by passing :humanize => false or :underscore => false as options.
     # This can be useful when dealing with words like "iPod" and "GPS".
     #
     # titleize is also aliased as titlecase.
